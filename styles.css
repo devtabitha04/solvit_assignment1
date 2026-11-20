@@ -1,0 +1,280 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #17191f;
+  background-color: #f4f5f7;
+  background-image:
+    linear-gradient(rgba(35, 42, 55, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(35, 42, 55, 0.035) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.page-shell {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 430px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #e2e4e8;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(20, 25, 35, 0.04);
+}
+
+.brand-mark {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #f1f2f4;
+  color: #f0b51b;
+  font-size: 38px;
+  font-weight: bold;
+  text-shadow: 1px 2px 0 #17191f;
+}
+
+h1 {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666b75;
+  font-size: 15px;
+  margin-bottom: 28px;
+}
+
+.form-group {
+  margin-bottom: 18px;
+}
+
+.form-group label,
+.label-row label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.small-link,
+.switch-page a,
+.terms a {
+  color: #17191f;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+} 
+.small-link {
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"] {
+  width: 100%;
+  height: 44px;
+  padding: 0 13px;
+  border: 1px solid #dfe2e7;
+  border-radius: 10px;
+  outline: none;
+  background: #fff;
+  color: #17191f;
+  font-family: inherit;
+  font-size: 14px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input::placeholder {
+  color: #a0a4ab;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus {
+  border-color: #343943;
+  box-shadow: 0 0 0 3px rgba(52, 57, 67, 0.09);
+}
+
+.primary-button {
+  width: 100%;
+  min-height: 44px;
+  margin-top: 4px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #343943, #111318);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.primary-button:hover {
+  opacity: 0.92;
+}
+
+.primary-button:active {
+  transform: translateY(1px);
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 22px 0;
+  color: #888d96;
+  font-size: 12px;
+}
+
+.separator::before,
+.separator::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: #e5e7eb;
+}
+
+.social-buttons {
+  display: grid;
+  gap: 10px;
+}
+
+.social-button {
+  min-height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 1px solid #dfe2e7;
+  border-radius: 10px;
+  background: #fff;
+  color: #17191f;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.social-button:hover {
+  background: #f8f9fa;
+}
+
+.google-mark {
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.apple-mark {
+  font-size: 15px;
+  color: #111318;
+}
+
+.switch-page {
+  margin-top: 24px;
+  text-align: center;
+  color: #666b75;
+  font-size: 13px;
+}
+
+.switch-page a {
+  color: #17191f;
+  font-weight: 600;
+  margin-left: 3px;
+}
+
+.signup-card {
+  max-width: 470px;
+}
+
+.signup-card .subtitle {
+  margin-bottom: 23px;
+}
+
+.signup-card .form-group {
+  margin-bottom: 14px;
+}
+
+.hint {
+  display: block;
+  margin-top: 6px;
+  color: #777d87;
+  font-size: 11px;
+}
+
+.terms {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  margin: 4px 0 17px;
+  color: #555b65;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+.password-box {
+    position: relative;
+    width: 100%;
+}
+
+.password-box input {
+    width: 100%;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.eye-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 17px;
+}
+
+
+.terms input {
+  margin-top: 2px;
+  accent-color: #20242c;
+}
+
+@media (max-width: 480px) {
+  .page-shell {
+    padding: 20px 12px;
+  }
+
+  .auth-card {
+    padding: 25px 20px;
+    border-radius: 15px;
+  }
+
+  h1 {
+    font-size: 23px;
+  }
+}
